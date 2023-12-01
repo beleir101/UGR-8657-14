@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <div>
+    <div class="offcanvas">
+        <input type="checkbox" name="yes">
+        <span class="icon"></span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="travel.html">Travel Experience</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div> 
+    <div class="contains">
         <header>
-            <div>
-                <div>
-                    <h1>Portfolio</h1>
-                </div>
+            <div class="about">
+                <h1>Portfolio</h1>
                 <nav>
                     <a href="#">Home</a>
                     <a href="Resume.html">Resume</a>
@@ -20,21 +30,24 @@
                     <a href="travel.html">Travel Experience</a>
                     <a href="about.html">About</a>
                 </nav>
-        </div>
+            </div>
         </header>
-        <main>
-            <p><span>Beleir</span><span> &nbsp;Messay</span></p>
-            <p><span >I'm a Softwrae Engineer</span></p>
+        <div class="hm">
+        <main class="rk">
+            <div class="man">
+                <p><span>Beleir&nbsp;Messay</span></p>
+            </div>
+            <p><span class="sp">I'm a Software Engineer</span></p>
         </main>
-        <footer>
-            <div>
-                
-                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://telegram.org/"><i class='bx bxl-telegram'></i></a>
-                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
-                <a href="https://discord.com/"><i class='bx bxl-discord'></i></a>
+        <footer class="rk">
+            <div class="ftd">
+                <a href="https://www.instagram.com/" class="re"><i class='bx bxl-instagram'></i></a>
+                <a href="https://telegram.org/" class="bl"><i class='bx bxl-telegram'></i></a>
+                <a href="https://github.com/" class="bla"><i class='bx bxl-github'></i></a>
+                <a href="https://discord.com/" class="vi"><i class='bx bxl-discord'></i></a>
             </div>
         </footer>
+        </div>
     </div>
-</body>
+    </body>
 </html>
