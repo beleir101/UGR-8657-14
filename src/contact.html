@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>Contatc Me</title>
 </head>
 <body>
+    <div class="offcanvas">
+        <input type="checkbox" name="yes">
+        <span class="icon"></span>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="travel.html">Travel Experience</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>  
     <header>
-        <div class="upper">
-            <div>
-                <h1>Contact Me</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>    
-                <a href="Resume.html">Resume</a>    
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
+        <div class="about">
+            <h1>Portfolio</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Hobbies.html">Hobbies</a>
+                <a href="travel.html">Travel Experience</a>
+                <a href="about.html">About</a>
             </nav>
-    </div>
+        </div>
     </header>
-    <div>
-        <div>
-            <div>
+    <main>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
                 <address>
-                    <div>
+                    <div class="Address details">
                         <i class='bx bx-location-plus'></i>
-                        <div>Address</div>
-                        <div>Addis Ababa, Ethiopia</div>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Addis Ababa, Ethiopia</div>
                     </div>
-                    <div>
+                    <div class="Phone details">
                         <i class='bx bx-phone'></i>
-                        <div>Phone</div>
-                        <div>+2519 1234 5678</div>
-                        <div>+2519 8765 4321</div>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+2519 1234 5678</div>
+                        <div class="text-two">+2519 8765 4321</dic>
                     </div>
-                    <div>
+                    <div class="email details">
                         <i class='bx bxs-envelope'></i>
-                        <div>Email</div>
-                        <div>beleir444@gmail.com</div>
+                        <div class="topic">Email</div>
+                        <div class="text-one">beleir444@gmail.com</div>
                     </div>
                 </address>
             </div>
-            <div>
-                <div>Send Me A Message</div>
+            <div class="right-side">
+                <div class="topic-text">Send Me A Message</div>
                 <p>You can send me a message about your inquries.</p>
-            </div>
             <form action="#">
                 <div class="input-box">
                     <input type="text" placeholder="Enter Your Last Name">
@@ -65,6 +75,8 @@
                 </div>
             </form>
         </div>
+        </div>
     </div>
+    </main>
 </body>
 </html>

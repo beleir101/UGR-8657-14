@@ -173,7 +173,7 @@ input[type="checkbox"]:checked ~ ul{
 }
 .contains{
     display: grid;
-    background: url(../images/desktop.jpg) no-repeat;
+    background: url(../../images/desktop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
