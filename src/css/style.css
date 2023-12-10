@@ -163,6 +163,7 @@ input[type="checkbox"]:checked ~ ul{
     display: flex;
     gap: 20%;
 }
+/* My tablet and desktop version have the same design */
 @media screen and (orientation: landscape), (min-width: 768px){
     
     .contains{
