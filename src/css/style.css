@@ -14,6 +14,24 @@
     --primary: #1f344f;
     --optional:#1f344f;
 }
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 400px;
+    margin-right: 2%;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    font-size: 0.7em;
+}
+header nav a:hover, header nav a:focus{
+    text-decoration: underline;
+    font-size: 1em;
+}
 body{
     height: 100vh;
     background: var(--background);
@@ -72,8 +90,8 @@ input[type="checkbox"]:checked ~ .icon::before{
   background-color: var(--bluured);
   transition: all 0.5s;
   z-index: 2;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -88,43 +106,41 @@ input[type="checkbox"]:checked ~ ul{
 }
 .offcanvas ul li a:hover{
     text-decoration: underline;
+    font-size: 1.2em;
 
 }
 /* Starting with the header*/
-.about{
+.header-title{
     color: var(--primary);
     margin-top: 2%;
     margin-bottom: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 2%;
+    font-size: 1.5em;
 }
-.about nav{
-    justify-self: end;
-    margin-right: 3%;
-}
-.fit{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+.projects-footer{
+    display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-top: 2%;
+    flex-grow: 1;
 }
-.lid a, .lit nav a{
+.footer-contact a, .lit nav a{
     color: var(--primary);
     text-decoration: none;
     transition: 0.3s ease;
 }
-.lid a:hover, .lis a:focus, .lit nav a:hover, .lit nav a:focus{
+.footer-contact a:hover, .lis a:focus, .lit nav a:hover, .lit nav a:focus{
     text-decoration: underline;
     color: #4f407c;
 }
-.lid{
-    display: grid;
+.footer-contact{
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3f209317;
@@ -132,148 +148,109 @@ input[type="checkbox"]:checked ~ ul{
     width: 100px;
     border-radius: 10%;
 }
-.lit {
-    display: grid;
+.footer-travel {
+    flex-grow: 2;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 4%;
     padding-right: 4%;
 }
-.lit nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.footer-travel a:hover{
+    font-size: 1.2em;
+}
+.footer-travel nav{
+    display: flex;
     gap: 20%;
 }
-@media screen and (max-width: 798px){
-    .lit{
+@media screen and (orientation: landscape), (min-width: 768px){
+    
+    .contains{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+    .card-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+    }
+    .offcanvas{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer-travel{
         display: none;
     }
     header nav{
         display: none;
     }
-    .fit{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 6px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
 }
-@media screen and (min-width: 798px){
-    .offcanvas{
-        display: none;
-    }
-}
+
 /*here ends the common css */
 
 /* hompage only CSS */
-.port{
-    color: #1f3447;
-}
 .contains{
-    display: grid;
+    display: flex;
     background: url(../../images/desktop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+    flex-direction: column;
     height: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
-.hm{
-    display: grid;
+.upper-main{
+    display: flex;
     position: absolute;
     top: 40%;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     gap: 10px;
 }
-.rk{
+.home-main{
     width: 100%;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.man{
+.hero{
     font-weight: 700;
     color: #1f3447;
     font-size: 3em;
 }
-.ftd{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.home-footer{
+    display: flex;
     gap: 20px;
     font-size: 1.2em;
 }
-.sp{
+.hero-child{
     font-weight: 500;
 }
-.ftd a{
+
+.home-footer a{
     transition: all 0.3s ease;
     color: var(--primary);
 }
-.ftd a:hover, .ftd a:focus{
+.home-footer a:hover, .home-footer a:focus{
     font-size: 1.4em;
 }
 /* about me only CSS */
-.pi{
-    min-width: 80%;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px 20px 40px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 4%;
-}
-.pi h2{
-    color: var(--optional);
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
-.pi p{
-    text-indent: 25px;
-    width: 100%;
-    text-align: justify;
-    padding-bottom: 3%;
-}
-.e{
-    margin-top: 3%;
-    min-width: 80%;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px 20px 40px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3%;
-}
-.e h2{
-    color: var(--primary);
-    margin-bottom: 2%;
-}
-.e img{
-    position: relative;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    border: 2px solid antiquewhite;
-    left: 20%;
-}
-.e p{
-    text-indent: 25px;
-    width: 100%;
-    text-align: justify;
-    padding-bottom: 3%;
-}
-.s{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px 20px 40px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3%;
-}
 .bigger img{
     width: 100px;
     height: 100px;
 }
 .bigger{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 3%;
 }
@@ -281,16 +258,8 @@ input[type="checkbox"]:checked ~ ul{
     color: var(--primary);
     margin-bottom: 3%;
 }
-.small1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 210px;
-    gap: 10px;
-}
 .small2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 210px;
+    display: flex;
     gap: 10px;
 }
 .headi{
@@ -298,96 +267,31 @@ input[type="checkbox"]:checked ~ ul{
     margin-bottom: 3%;
     margin-top: 2%;
 }
-aside h2{
-    font-size: 18px;
-}
-aside{
-    display: grid;
+.projects-footer{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: #fff;
     border-radius: 6px;
-    padding: 10px 20px 40px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.aside1{
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.aside1 img{
-    max-width: 50px;
-    max-height: 50px;
-}
-.aside1 p{
-    text-indent: 15px;
-    width: 100%;
-    text-align: justify;
-    padding-bottom: 3%;
-    margin-left: 1%;
-}
-.aside2{
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.aside2 img{
-    max-width: 50px;
-    max-height: 50px;
-}
-.aside2 p{
-    text-indent: 15px;
-    width: 100%;
-    text-align: justify;
-    padding-bottom: 3%;
-    margin-left: 1%;
-}
-.fit a{
+.projects-footer a{
     text-decoration: none;
     color:#5029bc;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.lid{
-    justify-self: end;
-}
 
 /* hobbies only css */
-.hobbies{
-    color: var(--primary);
-}
-.ho3{
+.hobbies-container{
     margin-top: 3%;
-    display: grid;
+    display: flex;
     justify-content: center;
     background-color: #ccc5c5;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(108, 170, 185, 0.2);
     margin-bottom: 3%;
     align-items: center;
-}
-.hike{
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-.hike h2{
-    color: var(--primary);
-    margin-left: 2%;
-    margin-bottom: 3%;
-}
-.hike p{
-    text-indent: 15px;
-    width: 96%;
-    text-align: justify;
-    padding-bottom: 3%;
-    margin-left: 1%;
 }
 .lis a{
     color: white;
@@ -399,30 +303,22 @@ aside{
     color: #75679e;
 }
 .lis{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-}
-.l{
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #3e2093;
-    height: 30px;
-    width: 100px;
-    border-radius: 6%;
+    gap: 20px;
 }
-.hike ul{
-    display: grid;
+.card1 ul{
+    display: flex;
     align-items: center;
+    flex-direction: column;
     list-style: none;
     font-family: serif;
     padding-left: 2%;
     padding-right: 2%;
     color: white;
 }
-.hike li{
-    display: grid;
+.card1 li{
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #abad8e;
@@ -431,20 +327,19 @@ aside{
     border-radius: 6%;
 }
 
+
 /* Resume only CSS */
-img{
-    max-width: 300px;
-    max-height: 300px;
-}
 .card1{
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 3%;
     padding-top: 3%;
     padding-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .card1 h2{
     padding-top: 2%;
@@ -459,94 +354,98 @@ img{
     padding-bottom: 3%;
     margin-left: 1%;
 }
-.tw{
+.card1-image{
     position: relative;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-self: center;
+    margin-left: 3%;
 }
-.tw figure{
-    justify-self: center;
+.card1-image figure{
+    align-self: center;
 }
-.op{
-    display: grid;
+.card1-image-name{
+    display: flex;
     width: 300px;
-    justify-content: center;
+    align-content: center;
     font-size: 1.3em;
     font-weight: 700;
+    justify-content: center;
     align-self: center;
-    justify-self: center;
-
 }
 .card1 ul{
     padding-left: 5%;
 }
-.down{
-    display: grid;
+.download-inside{
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3e2093;
     height: 50px;
     width: 200px;
 }
-.down a{
+.download-inside a{
     color: white;
     text-decoration: none;
     transition: 0.3s ease;
 }
-.last{
+.download-link{
     width: 100%;
-    display: grid;
+    display: flex;
     justify-content: center;
     margin-bottom: 5%;
 }
-.down a:hover, .down a:focus{
+.download-inside a:hover, .download-inside a:focus{
     text-decoration: underline;
     color: #75679e;
 }
-.fi{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.resume-footer{
+    display: flex;
     justify-content: space-between;
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-top: 2%;
+    flex-grow: 1;
 }
 /* Projects only css */
 img{
     max-width: 300px;
     max-height: 300px;
 }
-.card2{
+.card-projetcs{
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 3%;
     padding-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-self: center;
 }
-.big{
+.projects-image-holder{
     width: 100%;
-    display: grid;
+    display: flex;
     justify-content: center;
     background-color: var(--background);
     padding-bottom: 3%;
 }
-.card2 h2{
+.card-projetcs h2{
     margin-top: 3%;
     margin-bottom: 3%;
     color: var(--primary);
     padding-left: 3%;
 }
-.card2 p{
+.card-projetcs p{
     text-indent: 15px;
     width: 96%;
     text-align: justify;
     padding-bottom: 3%;
     margin-left: 1%;
 }
-.card2 img{
+.card-projetcs img{
     width: 100px;
     height: 100px;
 }
@@ -564,84 +463,31 @@ img{
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
-    display: grid;
+    display: flex;
     justify-content: center;
-}
-.card3{
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3%;
-    padding-bottom: 2%;
-    padding-left: 3%;
-}
-.card3 h2{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    color: var(--primary);
-}
-.card3 p{
-    text-indent: 15px;
-    width: 96%;
-    text-align: justify;
-    padding-bottom: 3%;
-    margin-left: 1%;
-}
-
-/*travel only css */
-img {
-    max-width: 300px;
-    max-height: 300px;
-}
-.card{
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3%;
-    padding-top: 3%;
-    padding-bottom: 2%;
-}
-.card h2{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    color: var(--primary);
-}
-.card img{
-    position: relative;
-    left: 30%;
-}
-.card p{
-    text-indent: 15px;
-    width: 96%;
-    text-align: justify;
-    padding-bottom: 3%;
-    margin-left: 1%;
 }
 
 /* contact only CSS */
 .container{
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 6px;
     padding: 20px 60px 40px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .container .content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .container .content .left-side{
-    width: 50%;
+    width: 25%;
     height: 100%;
     position: relative;
 }
- .content .left-side::before{
+.content .left-side::before{
     content: '';
     position: absolute;
     height: 70%;
@@ -650,7 +496,7 @@ img {
     right: -15px;
     top: 50%;
     transform: translateY(-50%);
-} 
+}
 .content .left-side .details{
     margin:  14px;
     text-align: center;
@@ -670,7 +516,7 @@ img {
 }
 .container .content .right-side{
     width: 75%;
-
+    margin-left: 75px;
 }
 .content .right-side .topic-text{
     font-size: 23px;
