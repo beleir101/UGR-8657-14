@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../flex.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Portfolio</title>
-</head>
-<body>
-    
-    <div class="offcanvas">
-        <input type="checkbox" name="yes">
-        <span class="icon"></span>
-        <ul>
+  </head>
+  <body>
+    <div class="offcanvas-header">
+      <div class="header-title">
+        <h1>Portfolio</h1>
+      </div>
+      <nav class="offcanvas">
+        <a class="open-menu" href="#"><i class="ion-android-menu"></i></a>
+        <div class="offcanvas-menu">
+          <a class="close-menu" href="#">
+            <i class="ion-android-close"></i>
+          </a>
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="Hobbies.html">Hobbies</a></li>
-            <li><a href="travel.html">Travel Experience</a></li>
+            <li><a href="travel.html">Travel</a></li>
             <li><a href="about.html">About</a></li>
-        </ul>
-    </div> 
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="contains">
-        <header>
-            <div class="header-title">
-                <h1>Portfolio</h1>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="Resume.html">Resume</a>
-                    <a href="Hobbies.html">Hobbies</a>
-                    <a href="travel.html">Travel Experience</a>
-                    <a href="about.html">About</a>
-                </nav>
-            </div>
-        </header>
-        <div class="upper-main">
+      <header>
+        <div class="header-title">
+          <h1>Portfolio</h1>
+          <nav>
+            <a href="#">Home</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Hobbies.html">Hobbies</a>
+            <a href="travel.html">Travel Experience</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+      </header>
+      <div class="upper-main">
         <main class="home-main">
-            <div class="hero">
-                <p><span>Beleir&nbsp;Messay</span></p>
-            </div>
-            <p><span class="hero-child">I'm a Software Engineer</span></p>
+          <div class="hero">
+            <p><span>Beleir&nbsp;Messay</span></p>
+          </div>
+          <p><span class="hero-child">I'm a Software Engineer</span></p>
         </main>
         <footer class="home-main">
-            <div class="home-footer">
-                <a href="https://www.instagram.com/" ><i class='bx bxl-instagram'></i></a>
-                <a href="https://telegram.org/" ><i class='bx bxl-telegram'></i></a>
-                <a href="https://github.com/" ><i class='bx bxl-github'></i></a>
-                <a href="https://discord.com/"><i class='bx bxl-discord'></i></a>
-            </div>
+          <div class="home-footer">
+            <a href="https://www.instagram.com/"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://telegram.org/"><i class="bx bxl-telegram"></i></a>
+            <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+            <a href="https://discord.com/"><i class="bx bxl-discord"></i></a>
+          </div>
         </footer>
-        </div>
+      </div>
     </div>
-    </body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
