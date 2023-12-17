@@ -1,54 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Resume</title>
-</head>
-<body>
+  </head>
+  <body class="has-background-primary-light">
     <header>
-        <div>
-            <div>
-                <h1>Resume</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>    
-                <a href="#">Resume</a>  
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
+      <nav class="navbar card mb-3">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">Resume</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="#">Resume</a>
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="navbar-item is-active has-text-link-dark"
+              href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div >
-            <div >
-                <figure>
-                    <img src="../images/projects.webp" alt="clock" title="projects Metaphor" >
-                </figure>
-                <h2>Projects</h2>
-                <h2>Programming a NAO robot</h2>
-                <p>Me and my friend estifanos had succesfully programmed a nao robot for goethe institute based on the theme of promoting cultural diversity.<a href="projects.html">More projects &gt;&gt;&gt;&gt;</a></p>
+      <div class="columns">
+        <div class="card column mr-2 mt-6">
+          <figure class="is-flex is-justify-content-center">
+            <div>
+              <img
+                class="image is-128x128"
+                src="../images/projects.webp"
+                alt="clock"
+                title="projects Metaphor"
+              />
+              <div class="has-text-centered has-text-weight-bold">Projects</div>
             </div>
-            <div >
-                <figure>
-                    <img src="../images/matthew-manuel-BhLSBX-0rnM-unsplash.jpg" title="Microsoft" alt="picture of microsoft co" >
-                </figure>
-                <h2>Work Experience</h2>
-                <ul>
-                <li>Software Development Intern | Microsoft 🚀</li>
-                <li>Duration: May 2022 - August 2022</li>
-                <li>Responsibilities: Collaborated with cross-functional teams to develop and test software solutions. Contributed to the implementation of new features, resulting in a 15% reduction in system errors.<a href="work.html">More Experience &gt;&gt;&gt;&gt;</a></li>
-                </ul>
-            </div>
+          </figure>
+          <h2 class="card-header-title is-size-3">Programming a NAO robot</h2>
+          <div class="card-content">
+            <p>
+              Me and my friend estifanos had succesfully programmed a nao robot
+              for goethe institute based on the theme of promoting cultural
+              diversity.<a href="projects.html"
+                >More projects &gt;&gt;&gt;&gt;</a
+              >
+            </p>
+          </div>
         </div>
+        <div class="card column ml-2 mt-6">
+          <figure class="is-flex is-justify-content-center">
+            <div>
+              <img
+                class="image is-128x128"
+                src="../images/matthew-manuel-BhLSBX-0rnM-unsplash.jpg"
+                title="Microsoft"
+                alt="picture of microsoft co"
+              />
+              <div class="has-text-centered has-text-weight-bold">
+                Work Experience
+              </div>
+            </div>
+          </figure>
+          <h2 class="card-header-title is-size-3">
+            Software Development Intern | Microsoft
+          </h2>
+          <div class="card-content">
+            <p>
+              Duration: May 2022 - August 2022 <br />Responsibilities:
+              Collaborated with cross-functional teams to develop and test
+              software solutions. Contributed to the implementation of new
+              features, resulting in a 15% reduction in system errors.<a
+                href="work.html"
+                >More Experience &gt;&gt;&gt;&gt;</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="is-flex is-justify-content-center">
         <div>
-            <a href="../images/Web_Cv.pdf" download="">Download Resume</a>
+          <a
+            class="button is-primary is"
+            href="../images/Web_Cv.pdf"
+            download=""
+            >Download Resume</a
+          >
         </div>
+      </div>
     </main>
     <footer>
-        <p>&copy;2023</p>
+      <div class="card mt-4 is-flex is-justify-content-space-between">
+        <p>&copy;copyright 2023</p>
         <a href="contact.html">Contact Me</a>
+      </div>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,62 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Projects</title>
-</head>
-<body>
+  </head>
+  <body class="has-background-primary-light">
     <header>
-        <div>
-            <div>
-                <h1>Projects</h1>
-            </div>
-            <nav>
-                <a href="homepage.html">Home</a>    
-                <a href="Resume.html">Resume</a>    
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
+      <nav class="navbar card mb-3">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">Projects</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="navbar-item is-active has-text-link-dark"
+              href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div>
-            <div >
-                <img src="../images/weather.webp" alt="weather app" title="weather App" >
-                <img src="../images/quiz.webp" alt="question mark" title="quiz" >
+      <div class="columns">
+        <div class="column is-0-mobile"></div>
+        <div class="card column is-four-fifths mt-5">
+          <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div class="column is is-flex is-justify-content-space-between">
+              <div>
+                <img
+                  class="image is-96x96"
+                  src="../images/weather.webp"
+                  alt="weather app"
+                  title="weather App"
+                />
+              </div>
+              <div>
+                <img
+                  class="image is-96x96"
+                  src="../images/quiz.webp"
+                  alt="question mark"
+                  title="quiz"
+                />
+              </div>
             </div>
-            <div >
-                <h2>Quiz System</h2>
-                <p>When I was a fist year student here in addis ababa university me and my friend developed a quiz asking app.</p>
-                <p>
-                    A user can get his mind off of the things that are bothering him at the moment as well as test his general knowledge.
-                </p>
+            <div class="column is-0-mobile"></div>
+          </div>
+          <h2 class="card-header-title is-size-3">Quiz System</h2>
+          <div class="card-content">
+            <p>
+              When I was a fist year student here in addis ababa university me
+              and my friend developed a quiz app.which tests ones general
+              knowledge.
+            </p>
+          </div>
+          <h2 class="card-header-title is-size-3">weather App</h2>
+          <div class="card-content">
+            <p>
+              That same year I worked on the Quiz system I had also developed. A
+              normal weather forcasting app using APIs
+            </p>
+          </div>
+        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
+      <div class="columns">
+        <div class="column is-0-mobile"></div>
+        <div class="card column is-four-fifths mt-4">
+          <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div class="column is-flex is-justify-content-space-between">
+              <div>
+                <img
+                  class="image is-96x96"
+                  src="../images/ecommerce.webp"
+                  alt="Ecommerce"
+                  title="E-commerce app"
+                />
+              </div>
+              <div>
+                <img
+                  class="image is-96x96"
+                  src="../images/expense.webp"
+                  alt="a man seeing his bills"
+                  title="expense tracking"
+                />
+              </div>
             </div>
+            <div class="column is-0-mobile"></div>
+          </div>
+          <h2 class="card-header-title is-size-3">E-commerce Website</h2>
+          <div class="card-content">
+            <p>
+              I did this one last summer.It was a simple e-commerce website with
+              features like product listings,shopping cart, and checkout.
+            </p>
+          </div>
+          <h2 class="card-header-title is-size-3">Expense Tracking</h2>
+          <div class="card-content">
+            <p>
+              This was done for my personal uses. As I was expending withou plan
+              I needed to see how much I was spending and which things took my
+              money more and I did this expense tracking app.This app has also
+              incorporated data visualization for a clear representation of
+              expenditure.
+            </p>
+          </div>
         </div>
-        <div>
-            <h2>weather App</h2>
-            <p>That same year I worked on the Quiz system I had also developed. A normal weather forcasting app using APIs</p>
-        </div>
-        <div >
-            <div >
-                <img src="../images/ecommerce.webp" alt="Ecommerce" title="E-commerce app" >
-                <img src="../images/expense.webp" alt="a man seeing his bills" title="expense tracking" >
-            </div>
-            <div >
-                <h2>E-commerce Website</h2>
-                <p>I did this one last summer.It was a simple e-commerce website with features like product listings,shopping cart, and checkout.</p>
-            </div>
-        </div>
-        <div>
-            <h2>Expense Tracking</h2>
-            <p>This was done for my personal uses. As I was expending withou plan I needed to see how much I was spending and which things took my money more and I did this expense tracking app.</p>
-            <p>This app has also incorporated data visualization for a clear representation of expenditure.</p>
-        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
     </main>
     <footer>
-        <p>&copy;2023</p>
+      <div class="card mt-4 is-flex is-justify-content-space-between">
+        <p>&copy;copyright 2023</p>
         <a href="contact.html">Contact Me</a>
+      </div>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

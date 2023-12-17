@@ -1,70 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Hobbies</title>
-</head>
-<body>
+  </head>
+  <body class="has-background-primary-light">
     <header>
-        <div>
-            <div>
-                <h1>My Hobbies</h1>
-            </div>
-            <nav>
-                <a href="homepage.html">Home</a>    
-                <a href="Resume.html">Resume</a>    
-                <a href="#">Hobbies</a> 
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
+      <nav class="navbar card">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">My Hobbies</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="#">Hobbies</a>
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="navbar-item is-active has-text-link-dark"
+              href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div >
-            <div >
-                <img src="../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg" alt="Hiking Guy" title="Hiking" >
-                <img src="../images/Codeforces.jpg" alt="Codeforces Logo" title="Codeforces" >
-                <img src="../images/piotr-makowski-27LH_0jXKYI-unsplash.jpg" alt="Chess" title="Chess" >
-                <img src="../images/sean-stone-dkb3wApu5XQ-unsplash.jpg" alt="Joy stick" title="Video Game" >
+      <div class="box columns mt-2 has-background-link-light">
+        <div class="column"></div>
+        <div class="column card">
+          <div class="is-flex is-justify-content-space-between">
+            <img
+              class="image is-96x96"
+              src="../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg"
+              alt="Hiking Guy"
+              title="Hiking"
+            />
+            <img
+              class="image is-96x96"
+              src="../images/Codeforces.jpg"
+              alt="Codeforces Logo"
+              title="Codeforces"
+            />
+          </div>
+          <div class="is-flex is-justify-content-space-between">
+            <img
+              class="image is-96x96"
+              src="../images/piotr-makowski-27LH_0jXKYI-unsplash.jpg"
+              alt="Chess"
+              title="Chess"
+            />
+            <img
+              class="image is-96x96"
+              src="../images/sean-stone-dkb3wApu5XQ-unsplash.jpg"
+              alt="Joy stick"
+              title="Video Game"
+            />
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+      <div class="columns mt-6">
+        <div class="column is-0-mobile"></div>
+        <div class="column card is-four-fifths">
+          <h2 class="card-header-title is-size-3">Hiking</h2>
+          <div class="card-content">
+            <p>
+              Exploring the great outdoors is my escape from the digital world.
+              Hiking, camping, and capturing the beauty of nature through
+              photography are integral parts of my downtime. It's a refreshing
+              way to recharge and find inspiration away from the screen.
+            </p>
+          </div>
+        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
+      <div class="columns mt-5">
+        <div class="column is-0-mobile"></div>
+        <div class="column card is-four-fifths">
+          <h2 class="card-header-title is-size-3">Competitive Programming</h2>
+          <div class="card-content">
+            <p>
+              In the realm of competitive programming, I find joy in the art of
+              algorithmic problem-solving. Platforms like LeetCode and
+              HackerRank become arenas where I hone my coding skills, tackling
+              challenges that range from the intriguing to the downright
+              complex. The adrenaline rush from optimizing code for efficiency
+              and crafting elegant solutions mirrors the strategic thinking
+              required in a chess match. The thrill of seeing a perfectly
+              executed algorithm is my version of a checkmate in the coding
+              world.The two platforms were I perform competitive programming
+              are:
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div class="column is-flex is-justify-content-space-between">
+              <div>
+                <a href="https://leetcode.com/">LeetCode</a>
+              </div>
+              <div>
+                <a href="https://codeforces.com/">Codeforces</a>
+              </div>
             </div>
-            <div>
-                <h2>Hiking</h2>
-                <p>Exploring the great outdoors is my escape from the digital world. Hiking, camping, and capturing the beauty of nature through photography are integral parts of my downtime. It's a refreshing way to recharge and find inspiration away from the screen.</p>
+            <div class="column is-0-mobile"></div>
+          </div>
+        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
+      <div class="columns">
+        <div class="column is-0-mobile"></div>
+        <div class="card column is-four-fifths mt-5">
+          <h2 class="card-header-title is-size-3">Chess</h2>
+          <div class="card-content">
+            <p>
+              Chess is not just a game for me; it's a passion that embodies
+              strategy, foresight, and the thrill of outsmarting an opponent.
+              Whether engaged in friendly matches at the local chess club or
+              participating in online tournaments, each move on the board is a
+              calculated step in a mental journey. The lessons from
+              chess—anticipation, adaptability, and precision—resonate with me,
+              influencing not only my gaming strategy but also my approach to
+              problem-solving in the world of programming.The two platforms were
+              I usally play chess are:
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div class="column is-flex is-justify-content-space-between">
+              <div>
+                <a href="https://lichess.org/">lichess</a>
+              </div>
+              <div>
+                <a href="https://www.chess.com/">chess.com</a>
+              </div>
             </div>
+            <div class="column is-0-mobile"></div>
+          </div>
         </div>
-        <div>
-            <h2>Competitive Programming</h2>
-            <p>In the realm of competitive programming, I find joy in the art of algorithmic problem-solving. Platforms like LeetCode and HackerRank become arenas where I hone my coding skills, tackling challenges that range from the intriguing to the downright complex. The adrenaline rush from optimizing code for efficiency and crafting elegant solutions mirrors the strategic thinking required in a chess match. The thrill of seeing a perfectly executed algorithm is my version of a checkmate in the coding world.</p>
-            <p>The two platforms were I perform competitive programming are:</p>
-            <ol>
-                <li><a href="https://leetcode.com/">LeetCode</a></li>
-                <li><a href="https://codeforces.com/">Codeforces</a></li>
-            </ol>
+        <div class="column is-0-mobile"></div>
+      </div>
+      <div class="columns">
+        <div class="column is-0-mobile"></div>
+        <div class="card column is-four-fifths mt-5">
+          <h2 class="card-header-title is-size-3">Video Games</h2>
+          <div class="card-content">
+            <p>
+              In the virtual realm, I enjoy immersing myself in gaming
+              adventures. Whether it's solving puzzles, strategizing in
+              multiplayer games, or exploring vast open worlds, gaming is my
+              go-to for relaxation and occasional friendly competition.Some
+              Games I enjoy playing are
+            </p>
+          </div>
+          <ul class="columns is-flex is-flex-direction-column">
+            <li class="column has-text-centered">FiFA</li>
+            <li class="column has-text-centered">Valorant</li>
+            <li class="column has-text-centered">We were here together</li>
+          </ul>
         </div>
-        <div>
-            <h2>Chess</h2>
-            <p>Chess is not just a game for me; it's a passion that embodies strategy, foresight, and the thrill of outsmarting an opponent. Whether engaged in friendly matches at the local chess club or participating in online tournaments, each move on the board is a calculated step in a mental journey. The lessons from chess—anticipation, adaptability, and precision—resonate with me, influencing not only my gaming strategy but also my approach to problem-solving in the world of programming.</p>
-            <p>The two platforms were I perform competitive programming are:</p>
-            <ol>
-                <li><a href="https://lichess.org/">lichess</a></li>
-                <li><a href="https://www.chess.com/">chess.com</a></li>
-            </ol>
-        </div>
-        <div>
-            <h2>Video Games</h2>
-            <p>In the virtual realm, I enjoy immersing myself in gaming adventures. Whether it's solving puzzles, strategizing in multiplayer games, or exploring vast open worlds, gaming is my go-to for relaxation and occasional friendly competition.</p>
-            <p>Some Games I enjoy playing are</p>
-            <ul>
-                <li>FiFA</li>
-                <li>Valorant</li>
-                <li>We were here together</li>
-            </ul>
-        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
     </main>
     <footer>
-        <p>&copy;2023</p>
+      <div class="card mt-4 is-flex is-justify-content-space-between">
+        <p>&copy;copyright 2023</p>
         <a href="contact.html">Contact Me</a>
+      </div>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

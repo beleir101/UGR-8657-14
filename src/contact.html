@@ -4,67 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Contatc Me</title>
 </head>
-<body>
+<body class="has-background-primary-light">
     <header>
-        <div class="upper">
-            <div>
-                <h1>Contact Me</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>    
-                <a href="Resume.html">Resume</a>    
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
-    </header>
-    <div>
-        <div>
-            <div>
-                <address>
-                    <div>
-                        <i class='bx bx-location-plus'></i>
-                        <div>Address</div>
-                        <div>Addis Ababa, Ethiopia</div>
-                    </div>
-                    <div>
-                        <i class='bx bx-phone'></i>
-                        <div>Phone</div>
-                        <div>+2519 1234 5678</div>
-                        <div>+2519 8765 4321</div>
-                    </div>
-                    <div>
-                        <i class='bx bxs-envelope'></i>
-                        <div>Email</div>
-                        <div>beleir444@gmail.com</div>
-                    </div>
-                </address>
-            </div>
-            <div>
-                <div>Send Me A Message</div>
-                <p>You can send me a message about your inquries.</p>
-            </div>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your Last Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your First Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your Email">
-                </div>
-                <div class="input-box message-box">
-                    <textarea></textarea>
-                </div>
-                <div class="button">
-                    <input type="button" value="Send Now">
-                </div>
-            </form>
+      <nav class="navbar card">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">Contact Me</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a class="navbar-item  has-text-link-dark" href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <div class="columns">
+        <div class="column is-0-mobile"></div>
+        <div class="column card is-9 mt-5 mb-5 is-flex is-justify-content-space-between">
+            <div class="column is-flex is-justify-content-space-between">
+                <div class="is-flex is-justify-content-center is-flex-direction-column">
+                    <address class="pl-4">
+                        <div class="is-flex  is-flex-direction-column is-align-items-center">
+                            <i class='bx bx-location-plus has-text-link'></i>
+                            <div class="topic">Address</div>
+                            <div class="text-one">Addis Ababa, Ethiopia</div>
+                        </div>
+                        <div class="is-flex is-align-items-center is-flex-direction-column">
+                            <i class='bx bx-phone has-text-link'></i>
+                            <div class="topic">Phone</div>
+                            <div class="text-one">+2519 1234 5678</div>
+                            <div class="text-two">+2519 8765 4321</dic>
+                        </div>
+                        <div class="is-flex is-align-items-center is-flex-direction-column">
+                            <i class='bx bxs-envelope has-text-link'></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">beleir444@gmail.com</div>
+                        </div>
+                    </address>
+                </div>
+                <div class="column">
+                    <h1 class="title has-text-link">Send Me A Message</h1>
+                    <p>You can send me a message about your inquries.</p>
+                <form action="#">
+                    <div class="field">
+                        <label class="label is-medium">First name</label>
+                        <div class="control">
+                            <input class="input is-link" type="text" placeholder="E.g Abel">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label is-medium">Last Name</label>
+                    <div class="control">
+                        <input class="input is-link" type="text" placeholder="E.g Biruk">
+                    </div>
+                    </div>
+                    <div class="field">
+                        <label class="label is-medium">Email</label>
+                    <div class="control">
+                        <input class="input is-link" type="text" placeholder="E.g Abebe@gmail.com">
+                    </div>
+                    </div>
+                    <textarea class="textarea" placeholder="e.g. Hello Beleir..."></textarea>
+                    <div class="control">
+                        <button id="submitted" class="button  is-primary mt-2">Send Now</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="column is-mobile"></div>
     </div>
+    </main>
+    <script src="js/main.js"></script>
 </body>
 </html>

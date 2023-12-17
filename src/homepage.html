@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Portfolio</title>
-</head>
-<body>
-    <div>
-        <header>
-            <div>
-                <div>
-                    <h1>Portfolio</h1>
-                </div>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="Resume.html">Resume</a>
-                    <a href="Hobbies.html">Hobbies</a>
-                    <a href="travel.html">Travel Experience</a>
-                    <a href="about.html">About</a>
-                </nav>
+  </head>
+  <body class="has-background-light">
+    <header>
+      <nav class="navbar card mb-3">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">Portfolio</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        </header>
-        <main>
-            <p><span>Beleir</span><span> &nbsp;Messay</span></p>
-            <p><span >I'm a Softwrae Engineer</span></p>
-        </main>
-        <footer>
-            <div>
-                
-                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://telegram.org/"><i class='bx bxl-telegram'></i></a>
-                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
-                <a href="https://discord.com/"><i class='bx bxl-discord'></i></a>
-            </div>
-        </footer>
-    </div>
-</body>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="#">Home</a>
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="navbar-item is-active has-text-link-dark"
+              href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="columns mb-6 mt-6">
+        <div class="column is-0-mobile"></div>
+        <div
+          class="column is-four-fifths card is-flex is-align-items-center is-flex-direction-column has-background-black"
+        >
+          <div class="has-text-grey-lighter is-size-1">
+            <p>Beleir&nbsp;Messay</p>
+          </div>
+          <p class="has-text-white">I'm a Software Engineer</p>
+        </div>
+        <div class="column is-0-mobile"></div>
+      </div>
+    </main>
+    <footer class="is-flex is-justify-content-center">
+      <div class="is-size-3 mb-6 mt-6">
+        <a href="https://www.instagram.com/"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://telegram.org/"><i class="bx bxl-telegram"></i></a>
+        <a href="https://github.com/"><i class="bx bxl-github"></i></a>
+        <a href="https://discord.com/"><i class="bx bxl-discord"></i></a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

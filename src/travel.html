@@ -3,56 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Travel Experience</title>
 </head>
-<body>
+<body class="has-background-primary-light">
     <header>
-        <div >
-            <div>
-                <h1>Travel Experience</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>
-                <a href="Resume.html">Resume</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="#">Travel Experience</a>
-                <a href="about.html">About</a>
-            </nav>
+      <nav class="navbar card mb-3">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark">About Me</a>
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="#"
+              >Travel Experience</a
+            >
+            <a class="navbar-item is-active has-text-link-dark" href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div >
-            <div  id="A">
-                <img src="../images/Axum.webp" alt="Axum_Ethiopia" title="Axum" >
-                <h2>Axum</h2>
+        <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div  id="A" class="card column is-four-fifths mt-5">
+                <img class="image is-128x128 pl-3 pt-3"src="../images/Axum.webp" alt="Axum_Ethiopia" title="Axum" >
+                <h2 class="card-header-title is-size-3">Axum</h2>
+                <div class="card-content">
                 <p>Axum, with its towering obelisks and archaeological wonders, became a journey through time, offering a glimpse into the heart of ancient Ethiopian civilization. The obelisks, remnants of a bygone era, stood tall against the backdrop of the St. Mary of Zion Church, adding a sense of mystery and majesty to the experience. The city's archaeological sites and the Queen of Sheba's Palace spoke volumes about Axum's significant role in shaping Ethiopia's rich heritage.</p>
+                </div>
             </div>
-            <div  id="F">
-                <img src="../images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="Fasiledes" title="Fasiledes" >
-                <h2>Fasieldes</h2>
+        <div class="column is-0-mobile"></div>
+        </div>
+        <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div  id="F" class=" column card is-four-fifths mt-5">
+                <img class="image is-128x128 pl-3 pt-3"src="../images/hunde-gemechu-vSpuHmEGxcI-unsplash.jpg" alt="Fasiledes" title="Fasiledes" >
+                <h2 class="card-header-title is-size-3">Fasieldes</h2>
+                <div class="card-content">
                 <p>Embarking on a journey to one of my countries wonder place Fasil, allowed me to step back in time and explore the historical marvels that this ancient city holds. The Royal Enclosure, a UNESCO World Heritage Site, unfolded tales of emperors and dynasties, leaving me in awe of the architectural prowess that graced the region centuries ago. From the majestic Fasil Ghebbi fortress to the enchanting Debre Berhan Selassie Church, every corner resonated with the vibrant history and culture of Ethiopia.</p>
             </div>
-            <div  id="S">
-                <img src="../images/casper-hildebrand-17fQ9mJT-aw-unsplash.jpg" alt="galärvarvsvägen boat" title="galärvarvsvägen boat" >
-                <h2>Vasa Museum</h2>
+            </div>
+            <div class="column is-0-mobile"></div>
+        </div>
+        <div class="columns">
+            <div class="column is-0-mobile"></div>
+            <div  id="S" class="card column is-four-fifths mt-5">
+                <img class="image is-128x128 pl-3 pt-3" src="../images/casper-hildebrand-17fQ9mJT-aw-unsplash.jpg" alt="galärvarvsvägen boat" title="galärvarvsvägen boat" >
+                <h2 class="card-header-title is-size-3">Vasa Museum</h2>
+                <div class="card-content">
                 <p>Venturing into Sweden was a captivating exploration of Scandinavian elegance and modern innovation. The streets of Stockholm echoed with a harmonious blend of historic charm and contemporary design. Visiting the Vasa Museum allowed me to witness a perfectly preserved 17th-century warship, while the Gamla Stan (Old Town) immersed me in the cobblestone alleys and colorful facades that define Sweden's capital. The seamless integration of tradition and progress was a testament to Sweden's cultural richness.</p>
             </div>
-            <div id = "N">
-                <img src="../images/hyunwon-jang-G7TcDrOnsUo-unsplash.jpg" alt="Northern lights Norway" title="Norway Northern Lights" >
-                <h2>Norway Northern Lights</h2>
+            </div>
+            <div class="column is-0-mobile"></div>
+            </div>
+            <div class="columns">
+                <div class="column is-0-mobile"></div>
+            <div id = "N" class="card column is-four-fifths mt-5">
+                <img class="image is-128x128 pl-3 pl-5" src="../images/hyunwon-jang-G7TcDrOnsUo-unsplash.jpg" alt="Northern lights Norway" title="Norway Northern Lights" >
+                <h2 class="card-header-title is-size-3">Norway Northern Lights</h2>
+                <div class="card-content">
                 <p>Northern Norway, with its ethereal landscapes and the allure of the Northern Lights, created an unforgettable travel experience. Standing beneath the shimmering auroras in Tromsø, I witnessed nature's own light show, a breathtaking dance of colors across the Arctic sky. The snow-covered landscapes and the crisp air added to the magic, making the Northern Lights expedition in Norway an adventure that transcended the ordinary and embraced the extraordinary.</p>
             </div>
-        </div>
+            </div>
+            <div class="column is-0-mobile"></div>
+            </div>
+
     </main>
     <footer>
-        <p>&copy;2023</p>
-        <nav>
-            <a href="#A">Axum</a>
-            <a href="#F">Fasiledes</a>
-            <a href="#S">Vasa Museum</a>
-            <a href="#N">Northern Lights</a>
-        </nav>
-        <a href="contact.html">Contact Me</a>
-    </footer>
+        <div class="card mt-4 is-flex is-justify-content-space-between">
+          <p>&copy;copyright 2023</p>
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </footer>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>

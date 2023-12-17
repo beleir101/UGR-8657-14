@@ -1,54 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Work</title>
-</head>
-<body>
+  </head>
+  <body class="has-background-primary-light">
     <header>
-        <div>
-            <div >
-                <h1>Work Experience</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>
-                <a href="Resume.html">Resume</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="travel.html">Travel Experience</a>
-                <a href="about.html">About</a>
-            </nav>
-    </div>
+      <nav class="navbar card mb-3">
+        <div class="navbar-brand is-size-4">
+          <a class="navbar-item is-size-1 has-text-link-dark"
+            >Work Experience</a
+          >
+          <a
+            id="dropdown"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-link-dark" href="homepage.html"
+              >Home</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Resume.html"
+              >Resume</a
+            >
+            <a class="navbar-item has-text-link-dark" href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a class="navbar-item has-text-link-dark" href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="navbar-item is-active has-text-link-dark"
+              href="about.html"
+              >About</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div >
-            <div >
-                <img src="../images/Goethe.png" alt = "Goethe institute logo" title="Goethe" >
-                <h2>Goethe Institute</h2>
-                <p>Since the project I mentioned under the projects secion was under contract it can be regarded as an official job.</p>
-                <p>Our head was yonas tarekegn a great guy head of library their.Our task was to programm the robot in order to demonstrate our culture for audiences on september 18. we had almost a month to do the whole thing and it was a great experiences.</p>
-            </div>
-            <div >
-                <img src="../images/precious-madubuike-t65T28d7x_8-unsplash.jpg" alt="JP morgan building" title="JP Morgan" >
-                <h2>JP Morgan</h2>
-            <blockquote cite="https://google.com">
-                <p>
-                JPMorgan Chase & Co. is an American multinational financial services firm headquartered in New York City and incorporated in Delaware. It is the largest bank in the United States and the world's largest bank by market capitalization as of 2023.
-                </p>
-            </blockquote>
-            <p>Here I had the chance to work for almost two months during summer and I had one of the best memories there.</p>
-            </div>
-            <div >
-                <img src="../images/Bosch.png" alt="Bosch Logo" title="Bosch Engineering" >
-                <h2>Robert Bosch</h2>
-                <p>Bosch was not one of the greates because of the language barriers between my colleagues as most of them their spoke German. But as a career it taught me a lot.</p>
-            </div>
-            
+      <div class="columns mt-5 mb-5">
+        <div class="column card mr-2 mb-4">
+          <div class="is-4by3">
+            <video controls>
+              <source
+                src="../images/Snapinsta.app_video_377320046_2970179829778644_286130638288232652_n.mp4"
+              />
+              <p>Your browser doesnt support this video.</p>
+            </video>
+          </div>
+          <h2 class="card-header-title is-size-3">Goethe Institute</h2>
+          <div class="card-content">
+            <p>
+              Since the project I mentioned under the projects secion was under
+              contract it can be regarded as an official job.
+            </p>
+            <p>
+              Our head was yonas tarekegn a great guy head of library their.Our
+              task was to programm the robot in order to demonstrate our culture
+              for audiences on september 18. we had almost a month to do the
+              whole thing and it was a great experiences.
+            </p>
+          </div>
         </div>
+        <div class="card column mr-2 ml-2 mb-4">
+          <div class="is-flex is-justify-content-center">
+            <img
+              class="image is-128x128"
+              src="../images/precious-madubuike-t65T28d7x_8-unsplash.jpg"
+              alt="JP morgan building"
+              title="JP Morgan"
+            />
+          </div>
+          <h2 class="card-header-title is-size-3">JP Morgan</h2>
+          <div class="card-content">
+            <blockquote cite="https://google.com">
+              <p>
+                JPMorgan Chase & Co. is an American multinational financial
+                services firm headquartered in New York City and incorporated in
+                Delaware. It is the largest bank in the United States and the
+                world's largest bank by market capitalization as of 2023.
+              </p>
+            </blockquote>
+            <p>
+              Here I had the chance to work for almost two months during summer
+              and I had one of the best memories there.
+            </p>
+          </div>
+        </div>
+        <div class="card column ml-2 mb-4">
+          <div class="is-flex is-justify-content-center">
+            <img
+              class="image is-128x128"
+              src="../images/Bosch.png"
+              alt="Bosch Logo"
+              title="Bosch Engineering"
+            />
+          </div>
+          <h2 class="card-header-title is-size-3">Robert Bosch</h2>
+          <div class="card-content">
+            <p>
+              Bosch was not one of the greatest because of the language barriers
+              between my colleagues as most of them their spoke German. But as a
+              career it taught me a lot.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>&copy;2023</p>
+      <div class="card mt-4 is-flex is-justify-content-space-between">
+        <p>&copy;copyright 2023</p>
         <a href="contact.html">Contact Me</a>
+      </div>
     </footer>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
