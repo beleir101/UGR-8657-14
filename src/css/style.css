@@ -295,7 +295,7 @@ body {
   align-items: center;
 }
 .lis a {
-  color: white;
+  color: var(--primary);
   text-decoration: none;
   transition: 0.3s ease;
 }
