@@ -1,95 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Hobbies</title>
-</head>
-<body>
-    <div class="offcanvas">
-        <input type="checkbox" name="yes">
-        <span class="icon"></span>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Hobbies.html">Hobbies</a></li>
-            <li><a href="travel.html">Travel Experience</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </div> 
+  </head>
+  <body class="bg-cyan-100">
     <header>
-            <div class="about">
-                <div class="hobbies">
-                    <h1>My Hobbies</h1>
-                </div>
-                <nav>
-                    <a href="homepage.html">Home</a>    
-                    <a href="Resume.html">Resume</a>    
-                    <a href="#">Hobbies</a> 
-                    <a href="travel.html">Travel Experience</a> 
-                    <a href="about.html">About</a>  
-                </nav>
-            </div>
-        </header>
+      <label
+        class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+        for="mobile-menu"
+      >
+        <input class="peer hidden" type="checkbox" id="mobile-menu" />
+        <div
+          class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+        ></div>
+        <div
+          class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+        >
+          &nbsp;
+        </div>
+        <div
+          class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+        >
+          <div
+            class="float-right min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl"
+          >
+            <nav
+              class="w-3/5 text-1xl flex flex-col align-center justify-center gap-7 mt-6 text-zinc-900"
+            >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="homepage.html"
+                >Home</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="Resume.html"
+                >Resume</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="#"
+                >Hobbies</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="travel.html"
+                >Travel Experience</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="about.html"
+                >About</a
+              >
+            </nav>
+          </div>
+        </div>
+        <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold ml-6">
+          MY Hobbies
+        </h1>
+      </label>
+      <div class="hidden lg:flex mr-6 ml-6 justify-between items-center">
+        <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold">
+          MY Hobbies
+        </h1>
+        <nav class="w-3/5 text-1xl flex justify-between mt-6 text-zinc-900">
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="homepage.html"
+            >Home</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="Resume.html"
+            >Resume</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="#"
+            >Hobbies</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="travel.html"
+            >Travel Experience</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="about.html"
+            >About</a
+          >
+        </nav>
+      </div>
     <main>
-        <div class="ho3">
-        <div class="bigger">
-            <div class="small1">
-                <img src="../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg" alt="Hiking Guy" title="Hiking" >
-                <img src="../images/Codeforces.jpg" alt="Codeforces Logo" title="Codeforces" >
-            </div>
-            <div class="small2">
-                <img src="../images/piotr-makowski-27LH_0jXKYI-unsplash.jpg" alt="Chess" title="Chess" >
-                <img src="../images/sean-stone-dkb3wApu5XQ-unsplash.jpg" alt="Joy stick" title="Video Game" >
-            </div>
+        <div class="container mx-auto bg-slate-300 flex justify-center p-5 mt-6 mb-6">
+        <div class="  flex flex-col gap-3 ml-5 mt-5 lg:w-1/5 ">
+          <div class="columns-2">
+            <img
+            class="w-20 lg:w-96 h-32"
+              src="../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg"
+              alt="Hiking Guy"
+              title="Hiking"
+            />
+            <img
+              class="w-20 lg:w-96 h-32"
+              src="../images/Codeforces.jpg"
+              alt="Codeforces Logo"
+              title="Codeforces"
+              
+            />
+          </div>
+          <div class="columns-2">
+            <img
+            class="w-20 lg:w-96 h-32"
+              src="../images/piotr-makowski-27LH_0jXKYI-unsplash.jpg"
+              alt="Chess"
+              title="Chess"
+            />
+            <img
+            class="w-20 lg:w-96 h-32"
+              src="../images/sean-stone-dkb3wApu5XQ-unsplash.jpg"
+              alt="Joy stick"
+              title="Video Game"
+            />
+          </div>
         </div>
+      </div>
+      <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+        <h2 class="text-3xl ml-3 mb-6 font-bold">Hiking</h2>
+        <p class="indent-3 mb-3">
+          Exploring the great outdoors is my escape from the digital world.
+          Hiking, camping, and capturing the beauty of nature through
+          photography are integral parts of my downtime. It's a refreshing way
+          to recharge and find inspiration away from the screen.
+        </p>
+      </div>
+      <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+        <h2 class="text-3xl ml-3 mb-6 font-bold">Competitive Programming</h2>
+        <p class="indent-3 mb-3">
+          In the realm of competitive programming, I find joy in the art of
+          algorithmic problem-solving. Platforms like LeetCode and HackerRank
+          become arenas where I hone my coding skills, tackling challenges that
+          range from the intriguing to the downright complex. The adrenaline
+          rush from optimizing code for efficiency and crafting elegant
+          solutions mirrors the strategic thinking required in a chess match.
+          The thrill of seeing a perfectly executed algorithm is my version of a
+          checkmate in the coding world.The two platforms were I perform
+          competitive programming are:
+        </p>
+        <div class="container sm:w-1/2 mx-auto flex justify-between items-center">
+          <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://leetcode.com/">LeetCode</a>
+          </div>
+          <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://codeforces.com/">Codeforces</a>
+          </div>
         </div>
-            <div class="hike">
-                <h2>Hiking</h2>
-                <p>Exploring the great outdoors is my escape from the digital world. Hiking, camping, and capturing the beauty of nature through photography are integral parts of my downtime. It's a refreshing way to recharge and find inspiration away from the screen.</p>
-            </div>
-        <div class="hike">
-            <h2>Competitive Programming</h2>
-            <p>In the realm of competitive programming, I find joy in the art of algorithmic problem-solving. Platforms like LeetCode and HackerRank become arenas where I hone my coding skills, tackling challenges that range from the intriguing to the downright complex. The adrenaline rush from optimizing code for efficiency and crafting elegant solutions mirrors the strategic thinking required in a chess match. The thrill of seeing a perfectly executed algorithm is my version of a checkmate in the coding world.The two platforms were I perform competitive programming are:</p>
-            <div class="lis">
-                <div class="l">
-                <a href="https://leetcode.com/">LeetCode</a>
-                </div>
-                <div class="l">
-                <a href="https://codeforces.com/">Codeforces</a>
-                </div>
-            </div>
+      </div>
+      <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+        <h2 class="text-3xl ml-3 mb-6 font-bold">Chess</h2>
+        <p class="indent-3 mb-3">
+          Chess is not just a game for me; it's a passion that embodies
+          strategy, foresight, and the thrill of outsmarting an opponent.
+          Whether engaged in friendly matches at the local chess club or
+          participating in online tournaments, each move on the board is a
+          calculated step in a mental journey. The lessons from
+          chess—anticipation, adaptability, and precision—resonate with me,
+          influencing not only my gaming strategy but also my approach to
+          problem-solving in the world of programming.The two platforms were I
+          usally play chess are:
+        </p>
+        <div class="container sm:w-1/2 mx-auto flex justify-between items-center">
+          <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://lichess.org/">lichess</a>
+          </div>
+          <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://www.chess.com/">chess.com</a>
+          </div>
         </div>
-        <div class="hike">
-            <h2>Chess</h2>
-            <p>Chess is not just a game for me; it's a passion that embodies strategy, foresight, and the thrill of outsmarting an opponent. Whether engaged in friendly matches at the local chess club or participating in online tournaments, each move on the board is a calculated step in a mental journey. The lessons from chess—anticipation, adaptability, and precision—resonate with me, influencing not only my gaming strategy but also my approach to problem-solving in the world of programming.The two platforms were I usally play chess are:</p>
-            <div class="lis">
-                <div class="l">
-                <a href="https://lichess.org/">lichess</a>
-                </div>
-                <div class="l">
-                <a href="https://www.chess.com/">chess.com</a>
-                </div>
-            </div>
-        </div>
-        <div class="hike">
-            <h2>Video Games</h2>
-            <p>In the virtual realm, I enjoy immersing myself in gaming adventures. Whether it's solving puzzles, strategizing in multiplayer games, or exploring vast open worlds, gaming is my go-to for relaxation and occasional friendly competition.Some Games I enjoy playing are</p>
-            <ul>
-                <li>FiFA</li>
-                <li>Valorant</li>
-                <li>We were here together</li>
-            </ul>
-        </div>
+      </div>
+      <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+        <h2 class="text-3xl ml-3 mb-6 font-bold">Video Games</h2>
+        <p class="indent-3 mb-3">
+          In the virtual realm, I enjoy immersing myself in gaming adventures.
+          Whether it's solving puzzles, strategizing in multiplayer games, or
+          exploring vast open worlds, gaming is my go-to for relaxation and
+          occasional friendly competition.Some Games I enjoy playing are
+        </p>
+        <ul class="flex flex-col items-center gap-4 font-serif ">
+          <li>FiFA</li>
+          <li>Valorant</li>
+          <li>We were here together</li>
+        </ul>
+      </div>
     </main>
-    <footer>
-        <div class="fit">
-        <p>&copy;copyright 2023</p>
-        <div class="lid">
-        <a href="contact.html">Contact Me</a>
-    </div>
-    </div>
-    </footer>
-</body>
+    <footer class="container mx-auto w-screen bg-blue-50 mt-10  shadow-2xl p-5 flex justify-between items-center">
+      <p>&copy;copyright 2023</p>
+        
+        <a class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl" href="contact.html">Contact Me</a>
+  </footer>
+  </body>
 </html>

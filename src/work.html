@@ -1,74 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Work</title>
-</head>
-<body>
-    <div class="offcanvas">
-        <input type="checkbox" name="yes">
-        <span class="icon"></span>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Hobbies.html">Hobbies</a></li>
-            <li><a href="travel.html">Travel Experience</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </div>
+  </head>
+  <body class="bg-cyan-100">
     <header>
-        <div class="about">
-            <h1>Work Experience</h1>
-            <nav >
-                <a href="homepage.html">Home</a>
-                <a href="Resume.html">Resume</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="travel.html">Travel Experience</a>
-                <a href="about.html">About</a>
+      <label
+        class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+        for="mobile-menu"
+      >
+        <input class="peer hidden" type="checkbox" id="mobile-menu" />
+        <div
+          class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+        ></div>
+        <div
+          class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+        >
+          &nbsp;
+        </div>
+        <div
+          class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+        >
+          <div
+            class="float-right min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl"
+          >
+            <nav
+              class="w-3/5 text-1xl flex flex-col align-center justify-center gap-7 mt-6 text-zinc-900"
+            >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="homepage.html"
+                >Home</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="Resume.html"
+                >Resume</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="Hobbies.html"
+                >Hobbies</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="travel.html"
+                >Travel Experience</a
+              >
+              <a
+                class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+                href="about.html"
+                >About</a
+              >
             </nav>
-    </div>
+          </div>
+        </div>
+        <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold ml-6">
+          Work
+        </h1>
+      </label>
+      <div class="hidden lg:flex mr-6 ml-6 justify-between items-center">
+        <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold">Work</h1>
+        <nav class="w-3/5 text-1xl flex justify-between mt-6 text-zinc-900">
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="homepage.html"
+            >Home</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="Resume.html"
+            >Resume</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="Hobbies.html"
+            >Hobbies</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="travel.html"
+            >Travel Experience</a
+          >
+          <a
+            class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+            href="about.html"
+            >About</a
+          >
+        </nav>
+      </div>
     </header>
     <main>
-            <div class="card3">
-                <div class="bin">
-                <video controls>
-                    <source src="../images/Snapinsta.app_video_377320046_2970179829778644_286130638288232652_n.mp4">
-                    <p>Your browser doesnt support this video.</p>
-                </video>
-            </div>
-                <h2>Goethe Institute</h2>
-                <p>Since the project I mentioned under the projects secion was under contract it can be regarded as an official job.</p>
-                <p>Our head was yonas tarekegn a great guy head of library their.Our task was to programm the robot in order to demonstrate our culture for audiences on september 18. we had almost a month to do the whole thing and it was a great experiences.</p>
-            </div>
-            <div class="card3">
-                <div class="bin">
-                <img src="../images/precious-madubuike-t65T28d7x_8-unsplash.jpg" alt="JP morgan building" title="JP Morgan" >
-                </div>
-                <h2>JP Morgan</h2>
-            <blockquote cite="https://google.com">
-                <p>
-                JPMorgan Chase & Co. is an American multinational financial services firm headquartered in New York City and incorporated in Delaware. It is the largest bank in the United States and the world's largest bank by market capitalization as of 2023.
-                </p>
-            </blockquote>
-            <p>Here I had the chance to work for almost two months during summer and I had one of the best memories there.</p>
-            </div>
-            <div class="card3">
-            <div class="bin">
-                <img src="../images/Bosch.png" alt="Bosch Logo" title="Bosch Engineering" >
-            </div>
-                <h2>Robert Bosch</h2>
-                <p>Bosch was not one of the greatest because of the language barriers between my colleagues as most of them their spoke German. But as a career it taught me a lot.</p>
-            </div>
+      <div class="lg:flex lg:justify-between lg:gap-3">
+        <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+          <div class="container flex justify-center">
+            <video class="w-72 h-auto" controls>
+              <source
+                src="../images/Snapinsta.app_video_377320046_2970179829778644_286130638288232652_n.mp4"
+              />
+              <p>Your browser doesnt support this video.</p>
+            </video>
+          </div>
+          <h2 class="text-3xl ml-3 mb-6 font-bold">Goethe Institute</h2>
+          <p class="indent-3 mb-3">
+            Since the project I mentioned under the projects secion was under
+            contract it can be regarded as an official job.
+          </p>
+          <p class="indent-3 mb-3">
+            Our head was yonas tarekegn a great guy head of library their.Our
+            task was to programm the robot in order to demonstrate our culture
+            for audiences on september 18. we had almost a month to do the whole
+            thing and it was a great experiences.
+          </p>
+        </div>
+        <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+          <div class="container flex justify-center">
+            <img
+              class="w-72 h-auto"
+              src="../images/precious-madubuike-t65T28d7x_8-unsplash.jpg"
+              alt="JP morgan building"
+              title="JP Morgan"
+            />
+          </div>
+          <h2 class="text-3xl ml-3 mb-6 font-bold">JP Morgan</h2>
+          <blockquote cite="https://google.com">
+            <p class="indent-3 mb-3">
+              JPMorgan Chase & Co. is an American multinational financial
+              services firm headquartered in New York City and incorporated in
+              Delaware. It is the largest bank in the United States and the
+              world's largest bank by market capitalization as of 2023.
+            </p>
+          </blockquote>
+          <p class="indent-3 mb-3">
+            Here I had the chance to work for almost two months during summer
+            and I had one of the best memories there.
+          </p>
+        </div>
+        <div class="container mx-auto bg-blue-50 mt-10 w-11/12 shadow-2xl p-5">
+          <div class="container flex justify-center">
+            <img
+              class="w-72 h-auto"
+              src="../images/Bosch.png"
+              alt="Bosch Logo"
+              title="Bosch Engineering"
+            />
+          </div>
+          <h2 class="text-3xl ml-3 mb-6 font-bold">Robert Bosch</h2>
+          <p class="indent-3 mb-3">
+            Bosch was not one of the greatest because of the language barriers
+            between my colleagues as most of them their spoke German. But as a
+            career it taught me a lot.
+          </p>
+        </div>
+      </div>
     </main>
-    <footer>
-        <div class="fit">
-        <p>&copy;copyright 2023</p>
-        <div class="lid">
-        <a href="contact.html">Contact Me</a>
-    </div>
-    </div>
+    <footer
+      class="container mx-auto w-screen bg-blue-50 mt-10 shadow-2xl p-5 flex justify-between items-center"
+    >
+      <p>&copy;copyright 2023</p>
+      <a
+        class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+        href="contact.html"
+        >Contact Me</a
+      >
     </footer>
-</body>
+  </body>
 </html>

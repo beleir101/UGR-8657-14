@@ -4,79 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../src/css/style.css">
-    <title>Contatc Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Contact Me</title>
 </head>
-<body>
-    <div class="offcanvas">
-        <input type="checkbox" name="yes">
-        <span class="icon"></span>
-        <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Hobbies.html">Hobbies</a></li>
-            <li><a href="travel.html">Travel Experience</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </div>  
-    <header>
-        <div class="about">
-            <h1>Portfolio</h1>
-            <nav>
-                <a href="homepage.html">Home</a>
-                <a href="Resume.html">Resume</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="travel.html">Travel Experience</a>
-                <a href="about.html">About</a>
-            </nav>
+<body class="bg-cyan-100">
+  <header>
+    <label
+      class="lg:hidden relative z-40 cursor-pointer px-3 py-6"
+      for="mobile-menu"
+    >
+      <input class="peer hidden" type="checkbox" id="mobile-menu" />
+      <div
+        class="relative z-50 block h-[1px] w-7 bg-black bg-transparent content-[''] before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:bg-black before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:bg-black after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+      ></div>
+      <div
+        class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block"
+      >
+        &nbsp;
+      </div>
+      <div
+        class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0"
+      >
+        <div
+          class="float-right min-h-full w-[85%] bg-white px-6 pt-12 shadow-2xl"
+        >
+          <nav
+            class="w-3/5 text-1xl flex flex-col align-center justify-center gap-7 mt-6 text-zinc-900"
+          >
+            <a
+              class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+              href="homepage.html"
+              >Home</a
+            >
+            <a
+              class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+              href="Resume.html"
+              >Resume</a
+            >
+            <a
+              class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+              href="Hobbies.html"
+              >Hobbies</a
+            >
+            <a
+              class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+              href="travel.html"
+              >Travel Experience</a
+            >
+            <a
+              class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+              href="about.html"
+              >About</a
+            >
+          </nav>
         </div>
-    </header>
+      </div>
+      <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold ml-6">
+        Contact
+      </h1>
+    </label>
+    <div class="hidden lg:flex mr-6 ml-6 justify-between items-center">
+      <h1 class="text-5xl mt-6 text-teal-900 font-sans font-bold">
+        Contact me
+      </h1>
+      <nav class="w-3/5 text-1xl flex justify-between mt-6 text-zinc-900">
+        <a
+          class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+          href="homepage.html"
+          >Home</a
+        >
+        <a
+          class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+          href="Resume.html"
+          >Resume</a
+        >
+        <a
+          class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+          href="Hobbies.html"
+          >Hobbies</a
+        >
+        <a
+          class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+          href="travel.html"
+          >Travel Experience</a
+        >
+        <a
+          class="transition ease-in-out delay-300 hover:text-zinc-700 hover:text-2xl"
+          href="#"
+          >About</a
+        >
+      </nav>
+    </div>
+  </header>
     <main>
-    <div class="container">
-        <div class="content">
-            <div class="left-side">
-                <address>
-                    <div class="Address details">
-                        <i class='bx bx-location-plus'></i>
-                        <div class="topic">Address</div>
-                        <div class="text-one">Addis Ababa, Ethiopia</div>
+        <div class="container  mx-auto bg-blue-50 mt-10 w-5/6 flex justify-between shadow-2xl p-7 mb-6">
+            <div class="ml-8">
+                <address class="flex flex-col justify-center gap-5">
+                    <div class="flex flex-col justify-center items-center">
+                        <i class='bx bx-location-plus text-indigo-600 text-2xl'></i>
+                        <div class="font-bold">Address</div>
+                        <div class="font-thin">Addis Ababa, Ethiopia</div>
                     </div>
-                    <div class="Phone details">
-                        <i class='bx bx-phone'></i>
-                        <div class="topic">Phone</div>
-                        <div class="text-one">+2519 1234 5678</div>
-                        <div class="text-two">+2519 8765 4321</dic>
+                    <div class="flex flex-col justify-center items-center mb-5">
+                        <i class='bx bx-phone text-indigo-600 text-2xl'></i>
+                        <div class="font-bold">Phone</div>
+                        <div class="font-thin">+2519 1234 5678</div>
+                        <div class="font-thin">+2519 8765 4321</dic>
                     </div>
-                    <div class="email details">
-                        <i class='bx bxs-envelope'></i>
-                        <div class="topic">Email</div>
-                        <div class="text-one">beleir444@gmail.com</div>
+                    <div class="flex flex-col justify-center items-center mt-6">
+                        <i class='bx bxs-envelope text-indigo-600 text-2xl'></i>
+                        <div class="font-bold">Email</div>
+                        <div class="font-thin">beleir444@gmail.com</div>
                     </div>
                 </address>
             </div>
-            <div class="right-side">
-                <div class="topic-text">Send Me A Message</div>
-                <p>You can send me a message about your inquries.</p>
+            <div class="w-3/5">
+                <div class="text-4xl font-bold text-sky-950 text-2xl mb-3">Send Me A Message</div>
+                <p class="font-serif">You can send me a message about your inquries.</p>
             <form action="#">
+              <div>
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="FirstName">
+                First Name
+              </label>
                 <div class="input-box">
-                    <input type="text" placeholder="Enter Your Last Name">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="E.g Abel">
                 </div>
+                </div>
+                <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="Last Name">
+                    Last Name
+                  </label>
                 <div class="input-box">
-                    <input type="text" placeholder="Enter Your First Name">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="E.g Henok">
                 </div>
+              </div>
+              <div>
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="Email">
+                  Email
+                </label>
                 <div class="input-box">
-                    <input type="text" placeholder="Enter Your Email">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="E.g abebe@gmail.com">
                 </div>
-                <div class="input-box message-box">
-                    <textarea></textarea>
+              </div>
+                <div class="input-box message-box ">
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="Message">
+                    Message Section
+                  </label>
+                    <textarea class="shadow mt-5 mb-3" placeholder="Hallo Beleir...."></textarea>
                 </div>
-                <div class="button">
-                    <input type="button" value="Send Now">
+                <div  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-1/4">
+                    <input  type="button" value="Send Now">
                 </div>
             </form>
         </div>
         </div>
-    </div>
     </main>
 </body>
 </html>
