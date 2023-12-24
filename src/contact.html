@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Contatc Me</title>
-</head>
-<body>
+  </head>
+  <body class="bg-light">
     <header>
-        <div class="upper">
-            <div>
-                <h1>Contact Me</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>    
-                <a href="Resume.html">Resume</a>    
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
-    </header>
-    <div>
-        <div>
-            <div>
-                <address>
-                    <div>
-                        <i class='bx bx-location-plus'></i>
-                        <div>Address</div>
-                        <div>Addis Ababa, Ethiopia</div>
-                    </div>
-                    <div>
-                        <i class='bx bx-phone'></i>
-                        <div>Phone</div>
-                        <div>+2519 1234 5678</div>
-                        <div>+2519 8765 4321</div>
-                    </div>
-                    <div>
-                        <i class='bx bxs-envelope'></i>
-                        <div>Email</div>
-                        <div>beleir444@gmail.com</div>
-                    </div>
-                </address>
-            </div>
-            <div>
-                <div>Send Me A Message</div>
-                <p>You can send me a message about your inquries.</p>
-            </div>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your Last Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your First Name">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Enter Your Email">
-                </div>
-                <div class="input-box message-box">
-                    <textarea></textarea>
-                </div>
-                <div class="button">
-                    <input type="button" value="Send Now">
-                </div>
-            </form>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between w-100">
+          <div class="container w-75">
+            <a href="#" class="navbar-brand"
+              ><span class="display-3 text-success fw-bold">Contact Me</span>
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarElements"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarElements">
+            <ul
+              class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 d-flex justify-content-between w-75"
+            >
+              <li class="nav-item">
+                <a href="homepage.html" class="nav-link link-success fs-4"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Resume.html"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Hobbies.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</body>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="d-flex flex-column-reverse flex-sm-row w-75 mx-auto gap-5 p-5 shadow mt-5 mb-3"
+      >
+        <div>
+          <address class="d-flex flex-column align-items-center gap-3">
+            <div class="d-flex flex-column align-items-center">
+              <i class="bx bx-location-plus text-success fs-3"></i>
+              <div class="fw-bold">Address</div>
+              <div class="fw-lighter">Addis Ababa, Ethiopia</div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <i class="bx bx-phone text-success fs-3"></i>
+              <div class="fw-bold">Phone</div>
+              <div class="fw-lighter">+2519 1234 5678</div>
+              <div class="fw-lighter">+2519 8765 4321</div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <i class="bx bxs-envelope text-success fs-3"></i>
+              <div class="fw-bold">Email</div>
+              <div class="fw-lighter">beleir444@gmail.com</div>
+            </div>
+          </address>
+        </div>
+        <div>
+          <div class="fs-3 fw-bold text-success">Send Me A Message</div>
+          <p>You can send me a message about your inquries.</p>
+          <form action="#">
+            <label class="form-label"> First Name</label><br />
+            <input type="text" placeholder="E.g: Abel" /><br />
+            <label class="form-label">Last name</label><br />
+            <input type="text" placeholder="E.g: Solomon" /><br />
+            <label class="form-label">Email</label><br />
+            <input type="text" placeholder="E.g abebe@gmail.com" /><br />
+
+            <div class="mt-3 mb-3">
+              <textarea placeholder="Hallo Beleir...."></textarea>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Send Now</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

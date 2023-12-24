@@ -1,79 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>About Me</title>
-</head>
-<body>
+  </head>
+  <body class="bg-light">
     <header>
-            <div >
-                <div >
-                    <h1>About Me</h1>
-                </div>
-                <nav >
-                    <a href="homepage.html">Home</a>    
-                    <a href="Resume.html">Resume</a>    
-                    <a href="Hobbies.html">Hobbies</a>  
-                    <a href="travel.html">Travel Experience</a> 
-                    <a href="#">About</a>   
-                </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between w-100">
+          <div class="container w-75">
+            <a href="#" class="navbar-brand"
+              ><span class="display-3 text-success fw-bold">About Me</span>
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarElements"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarElements">
+            <ul
+              class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 d-flex justify-content-between w-75"
+            >
+              <li class="nav-item">
+                <a href="homepage.html" class="nav-link link-success fs-4"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Resume.html"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Hobbies.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="#">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </header>
-    <main>
-        <div id="PI">
-            <div >
-            </div>
-            <div>
-                <h2>Hello I'm Beleir Messay</h2>
-                <p>25 year old software Engineer based in the vibrant city of Addis Ababa, Ethiopia.From Young age, I found my calling in the world of technology, and today, I am dedicated to crafting innovative solutions and bringing ideas to life through code.</p>
-                <p>While I am deeply immersed in the digital realm, I believe in a holistic approach to life. Outside of coding, you'll find me exploring new cultures, enjoying the rich history of Addis Ababa, and engaging in activities that foster personal growth.</p>
-                <p>Join me on this exciting journey as I navigate the world of software engineering, embracing challenges, and transforming ideas into reality. Let's build a future where technology serves as a catalyst for positive change.</p>
-            </div>
+      </nav>
+    </header>
+    <main class="d-lg-flex gap-lg-3 align-items-lg-center">
+      <div>
+        <div id="PI" class="card w-75 mx-auto shadow">
+          <h2 class="card-header">Hello I'm Beleir Messay</h2>
+          <div class="card-body">
+            <p>
+              <span class="ms-3">25</span> year old software Engineer based in
+              the vibrant city of Addis Ababa, Ethiopia.From Young age, I found
+              my calling in the world of technology, and today, I am dedicated
+              to crafting innovative solutions and bringing ideas to life
+              through code.
+            </p>
+            <p>
+              <span class="ms-3"> While </span>I am deeply immersed in the
+              digital realm, I believe in a holistic approach to life. Outside
+              of coding, you'll find me exploring new cultures, enjoying the
+              rich history of Addis Ababa, and engaging in activities that
+              foster personal growth.
+            </p>
+            <p>
+              <span class="ms-3"> Join</span> me on this exciting journey as I
+              navigate the world of software engineering, embracing challenges,
+              and transforming ideas into reality. Let's build a future where
+              technology serves as a catalyst for positive change.
+            </p>
+          </div>
         </div>
-        <section id="E">
-        <h2>Eductaion</h2>
-        <p>
-            Started out my elementary Eductaion in a school called montessorian and attended highschool in a school named LemLem.currently pursuing my degree in software engineering, a journey that has not only expanded my knowledge but has also fueled my curiosity for creating software that makes a positive impact on the world. 
-        </p>
-        <p>The dynamic nature of software engineering inspires me to be a lifelong learner. I am always seeking opportunities to expand my skill set, whether through online courses, collaborative projects, or involvement in the open-source community.</p>
+        <section id="E" class="card w-75 mx-auto shadow mt-5">
+          <h2 class="card-title ms-2">Eductaion</h2>
+          <img
+            class="ms-5"
+            src="../images/element5-digital-OyCl7Y4y0Bk-unsplash.jpg"
+            alt="Apple and book"
+            title="Eductaion"
+            width="150"
+            height="150"
+          />
+          <div class="card-body">
+            <p>
+              <span class="ms-3">Started </span>out my elementary Eductaion in a
+              school called montessorian and attended highschool in a school
+              named LemLem.currently pursuing my degree in software engineering,
+              a journey that has not only expanded my knowledge but has also
+              fueled my curiosity for creating software that makes a positive
+              impact on the world.
+            </p>
+            <p>
+              <span class="ms-3">The</span> dynamic nature of software
+              engineering inspires me to be a lifelong learner. I am always
+              seeking opportunities to expand my skill set, whether through
+              online courses, collaborative projects, or involvement in the
+              open-source community.
+            </p>
+          </div>
         </section>
-        <div id = "S">
-            <h2>Skills</h2>
-            <p>Programming languages</p>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-            </ul>
-            <p>Collaboration & Project Management</p>
-            <ul>
-                <li>Agile Methodology</li>
-                <li>Team Collaboration</li>
-                <li>Jira, Trello</li>
-            </ul>
-            <p>Soft Skills</p>
-            <ul>
-                <li>Effective Communication</li>
-                <li>Team Collaboration</li>
-                <li>Critical Thinking</li>
-            </ul>
-            <p>Web Development</p>
-            <ul>
-                <li>Frontend: HTML, CSS, JavaScript, React</li>
-                <li>Backend: Node.js, Express</li>
-                <li>Database: MongoDB, MySQL</li>
-            </ul>
+        <div id="S" class="card w-75 mx-auto shadow mt-5 mb-3">
+          <h2 class="card-title ms-2">Skills</h2>
+          <div class="d-flex w-25 flex-column gap-2 ms-3 mb-5 mt-2">
+            <div class="d-flex justify-content-between gap-2">
+              <img
+                src="../images/gabriel-heinzer-g5jpH62pwes-unsplash.jpg"
+                alt="code"
+                title="nodeJs"
+                loading="lazy"
+                width="100"
+                height="100"
+              />
+              <img
+                src="../images/kenny-eliason-2RRq1BHPq4E-unsplash.jpg"
+                alt="Statue"
+                title="Critical Thinking"
+                loading="lazy"
+                height="100"
+                width="100"
+              />
+            </div>
+            <div class="d-flex justify-content-between gap-2">
+              <img
+                src="../images/michiel-leunens-0wIHsm2_1fc-unsplash.jpg"
+                alt="Java printed cup"
+                title="java"
+                loading="lazy"
+                width="100"
+                height="100"
+              />
+              <img
+                src="../images/trello.avif"
+                alt="Trello"
+                title="trello"
+                loading="lazy"
+                width="100"
+                height="100"
+              />
+            </div>
+          </div>
+          <p><span class="fw-light ms-3">Programming languages</span></p>
+          <ul class="d-flex flex-column align-items-center list-inline fw-bold">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+          <p class="fw-light ms-3">Collaboration & Project Management</p>
+          <ul class="d-flex flex-column align-items-center list-inline fw-bold">
+            <li>Agile Methodology</li>
+            <li>Team Collaboration</li>
+            <li>Jira, Trello</li>
+          </ul>
+          <p class="fw-light ms-3">Soft Skills</p>
+          <ul class="d-flex flex-column align-items-center list-inline fw-bold">
+            <li>Effective Communication</li>
+            <li>Team Collaboration</li>
+            <li>Critical Thinking</li>
+          </ul>
+          <p class="fw-light ms-3">Web Development</p>
+          <ul class="d-flex flex-column align-items-center list-inline fw-bold">
+            <li>Frontend: HTML, CSS, JavaScript, React</li>
+            <li>Backend: Node.js, Express</li>
+            <li>Database: MongoDB, MySQL</li>
+          </ul>
         </div>
+      </div>
+      <aside class="card w-75 mx-auto shadow mt-5 mb-3 bg-dark-subtle">
+        <h2 class="card-header">Awards while in highschool</h2>
+        <div class="d-flex ms-3 mt-3 gap-3">
+          <div>
+            <img
+              height="50"
+              width="50"
+              src="../images/brands-people-ZdqSuxl3Lak-unsplash.jpg"
+              alt="awrd"
+              title="Awarded"
+            />
+          </div>
+          <div>
+            <p>
+              When I was in grade 8 I competed in a question and answer contest
+              and was a runner up.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex ms-3 mt-3 gap-3">
+          <img
+            src="../images/giorgio-trovato-_XTY6lD8jgM-unsplash.jpg"
+            alt="Trophy"
+            title="Trophy"
+            height="50"
+            width="50"
+          />
+          <div>
+            <p>
+              And when I reached Grade ten I finally won it but it was for a
+              different school.
+            </p>
+          </div>
+        </div>
+      </aside>
     </main>
     <footer>
-        <p>&copy;2023</p>
-        <nav>
-            <a href="#PI">personal Info</a>
-            <a href="#E">Eductaion</a>
-            <a href="#S">Skills</a>
-        </nav>
-        <a href="contact.html">Contact Me</a>
+      <div class="d-flex justify-content-between">
+        <p>&copy;copyright 2023</p>
+        <a class="link text-decoration-none fs-4" href="contact.html"
+          >Contact Me</a
+        >
+      </div>
     </footer>
-</body>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

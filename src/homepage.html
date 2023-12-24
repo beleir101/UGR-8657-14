@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Portfolio</title>
-</head>
-<body>
-    <div>
-        <header>
-            <div>
-                <div>
-                    <h1>Portfolio</h1>
-                </div>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="Resume.html">Resume</a>
-                    <a href="Hobbies.html">Hobbies</a>
-                    <a href="travel.html">Travel Experience</a>
-                    <a href="about.html">About</a>
-                </nav>
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between w-100">
+          <div class="container w-75">
+            <a href="#" class="navbar-brand"
+              ><span class="display-3 text-success fw-bold">Portfolio</span>
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarElements"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarElements">
+            <ul
+              class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 d-flex justify-content-between w-75"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link link-success fs-4">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Resume.html"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Hobbies.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        </header>
-        <main>
-            <p><span>Beleir</span><span> &nbsp;Messay</span></p>
-            <p><span >I'm a Softwrae Engineer</span></p>
+      </nav>
+    </header>
+    <div class="mt-5">
+      <div class="card w-lg-50 w-75 mx-auto shadow mt-5">
+        <main
+          class="d-flex justify-content-center flex-column align-items-center"
+        >
+          <div class="display-3 text-success fw-bold">
+            <p><span>Beleir&nbsp;Messay</span></p>
+          </div>
+          <p><span class="hero-child">I'm a Software Engineer</span></p>
         </main>
-        <footer>
-            <div>
-                
-                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://telegram.org/"><i class='bx bxl-telegram'></i></a>
-                <a href="https://github.com/"><i class='bx bxl-github'></i></a>
-                <a href="https://discord.com/"><i class='bx bxl-discord'></i></a>
-            </div>
-        </footer>
+      </div>
+      <footer class="mt-5">
+        <div class="d-flex justify-content-between w-50 w-lg-25 mx-auto">
+          <a href="https://www.instagram.com/"
+            ><i class="bx bxl-instagram fs-3 text-success"></i
+          ></a>
+          <a href="https://telegram.org/"
+            ><i class="bx bxl-telegram fs-3 text-success"></i
+          ></a>
+          <a href="https://github.com/"
+            ><i class="bx bxl-github fs-3 text-success"></i
+          ></a>
+          <a href="https://discord.com/"
+            ><i class="bx bxl-discord fs-3 text-success"></i
+          ></a>
+        </div>
+      </footer>
     </div>
-</body>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

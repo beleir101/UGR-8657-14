@@ -1,54 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <title>Resume</title>
-</head>
-<body>
+  </head>
+  <body class="bg-light">
     <header>
-        <div>
-            <div>
-                <h1>Resume</h1>
-            </div>
-            <nav >
-                <a href="homepage.html">Home</a>    
-                <a href="#">Resume</a>  
-                <a href="Hobbies.html">Hobbies</a>  
-                <a href="travel.html">Travel Experience</a> 
-                <a href="about.html">About</a>  
-            </nav>
-    </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between w-100">
+          <div class="container w-75">
+            <a href="#" class="navbar-brand"
+              ><span class="display-3 text-success fw-bold">Resume</span>
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarElements"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarElements">
+            <ul
+              class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 d-flex justify-content-between w-75"
+            >
+              <li class="nav-item">
+                <a href="homepage.html" class="nav-link link-success fs-4"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="Hobbies.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success fs-4" href="about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div >
-            <div >
-                <figure>
-                    <img src="../images/projects.webp" alt="clock" title="projects Metaphor" >
-                </figure>
-                <h2>Projects</h2>
-                <h2>Programming a NAO robot</h2>
-                <p>Me and my friend estifanos had succesfully programmed a nao robot for goethe institute based on the theme of promoting cultural diversity.<a href="projects.html">More projects &gt;&gt;&gt;&gt;</a></p>
-            </div>
-            <div >
-                <figure>
-                    <img src="../images/matthew-manuel-BhLSBX-0rnM-unsplash.jpg" title="Microsoft" alt="picture of microsoft co" >
-                </figure>
-                <h2>Work Experience</h2>
-                <ul>
-                <li>Software Development Intern | Microsoft 🚀</li>
-                <li>Duration: May 2022 - August 2022</li>
-                <li>Responsibilities: Collaborated with cross-functional teams to develop and test software solutions. Contributed to the implementation of new features, resulting in a 15% reduction in system errors.<a href="work.html">More Experience &gt;&gt;&gt;&gt;</a></li>
-                </ul>
-            </div>
+      <div class="d-lg-flex gap-lg-3 mt-4">
+        <div class="card w-75 mx-auto shadow p-4 mb-3">
+          <div
+            class="d-flex justify-content-center flex-column align-items-center"
+          >
+            <figure>
+              <img
+                src="../images/projects.webp"
+                alt="clock"
+                title="projects Metaphor"
+                width="200"
+                height="200"
+              />
+            </figure>
+            <div class="fw-bold">Projects</div>
+          </div>
+          <h2 class="card-header">Programming a NAO robot</h2>
+          <p>
+            Me and my friend estifanos had succesfully programmed a nao robot
+            for goethe institute based on the theme of promoting cultural
+            diversity.<a href="projects.html">More projects &gt;&gt;&gt;&gt;</a>
+          </p>
         </div>
-        <div>
-            <a href="../images/Web_Cv.pdf" download="">Download Resume</a>
+        <div class="card w-75 mx-auto shadow p-4 mb-3">
+          <div
+            class="d-flex justify-content-center flex-column align-items-center"
+          >
+            <figure>
+              <img
+                src="../images/matthew-manuel-BhLSBX-0rnM-unsplash.jpg"
+                title="Microsoft"
+                alt="picture of microsoft co"
+                width="200"
+                height="200"
+              />
+            </figure>
+            <div class="fw-bold">Work Experience</div>
+          </div>
+          <h2 class="card-header">Software Development Intern | Microsoft</h2>
+          <p>
+            Duration: May 2022 - August 2022 <br />Responsibilities:
+            Collaborated with cross-functional teams to develop and test
+            software solutions. Contributed to the implementation of new
+            features, resulting in a 15% reduction in system errors.<a
+              href="work.html"
+              >More Experience &gt;&gt;&gt;&gt;</a
+            >
+          </p>
         </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-primary mx-auto">
+          <a
+            class="text-white text-decoration-none"
+            href="../images/Web_Cv.pdf"
+            download=""
+            >Download Resume</a
+          >
+        </button>
+      </div>
     </main>
     <footer>
-        <p>&copy;2023</p>
-        <a href="contact.html">Contact Me</a>
+      <div class="d-flex justify-content-between">
+        <p>&copy;copyright 2023</p>
+        <a class="link text-decoration-none fs-4" href="contact.html"
+          >Contact Me</a
+        >
+      </div>
     </footer>
-</body>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
